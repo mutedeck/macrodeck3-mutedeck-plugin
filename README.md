@@ -121,8 +121,9 @@ and [MuteDeck.PluginClient](https://www.nuget.org/packages/MuteDeck.PluginClient
 - The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0). The scripts look for it in
   `$DOTNET_ROOT`, then `~/.dotnet` (where Microsoft's install script puts it), then on `PATH`, so an
   older system-wide SDK does not get in the way.
-- Only for rebuilding the icon pack (`scripts/make-icon-pack.sh`): Python 3 and `cwebp`
-  (`brew install webp`). Nothing else in the scripts needs Python.
+- Only for rebuilding the icon pack (`scripts/make-icon-pack.sh`): Python 3, `cwebp`
+  (`brew install webp`) and Google Chrome (or set `CHROME` to a Chromium binary). Nothing else in the
+  scripts needs them.
 
 The Macro Deck plugin CLI (`macrodeck-plugin`) is a local tool pinned in `.config/dotnet-tools.json` to
 the SDK version in `Directory.Packages.props`. The scripts restore it and refuse to run when the two
@@ -140,7 +141,7 @@ differ; outside the scripts, run it as `dotnet tool run macrodeck-plugin -- <com
 | `scripts/build.sh --all` | The same, with one package for every declared platform (osx-arm64 and win-x64). |
 | `scripts/build.sh --rid win-x64` | One platform. Conformance runs only for this machine's platform. |
 | `scripts/build.sh --skip-tests --skip-conformance` | Just build and pack. |
-| `scripts/make-icon-pack.sh` | Rebuilds `src/MuteDeckPlugin/icon-packs/mutedeck.macroDeckIconPack` from `icon-src/*.png` and registers it in the manifest. The output is byte-for-byte reproducible. |
+| `scripts/make-icon-pack.sh` | Renders the vector icons (`icon-src/vector/`, listed in `scripts/render_icons.py`) to 512 px PNGs in `icon-src/`, then rebuilds `src/MuteDeckPlugin/icon-packs/mutedeck.macroDeckIconPack` from `icon-src/*.png` and registers it in the manifest. Packing the same PNGs always gives the same bytes; a different Chrome version may render slightly different PNGs. Icons without a vector source (clap, applause, tada, bring to front, background blur, custom action, logo) are hand-made PNGs in `icon-src/`. |
 
 Packages and conformance reports land in `artifacts/`. Plain `dotnet build` and `dotnet test` on
 `MuteDeckPlugin.slnx` work too.

@@ -27,10 +27,17 @@ After changing a dependency, run `scripts/build.sh` and compare the packages in
 
 ## Bundled artwork
 
-`src/MuteDeckPlugin/Assets/icon.png` and the icons in
-`src/MuteDeckPlugin/icon-packs/mutedeck.macroDeckIconPack` (built from `icon-src/`) are carried over
-unchanged from MuteDeck's Macro Deck 2 plugin repository, which MuteDeck publishes under the MIT
-license, the same license as this repository ([LICENSE](LICENSE)).
+`src/MuteDeckPlugin/Assets/icon.png` and the hand-made PNGs in `icon-src/` (clap, applause, tada, bring
+to front, background blur, custom action, logo) are carried over unchanged from MuteDeck's Macro Deck 2
+plugin repository, which MuteDeck publishes under the MIT license, the same license as this repository
+([LICENSE](LICENSE)). `icon-src/vector/mutedeck/portal-exit.svg` comes from the MuteDeck desktop app.
+
+The other icons in `src/MuteDeckPlugin/icon-packs/mutedeck.macroDeckIconPack` are rendered from
+[Font Awesome Free](https://fontawesome.com) 6.2.1 icons (`icon-src/vector/fontawesome/`), by
+Fonticons, Inc., licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+(https://fontawesome.com/license/free). They were scaled, recoloured and, for the crossed-out variants,
+overlaid with a red slash: microphone, video, share, circle-stop (solid and regular), closed-captioning
+(regular), hand, heart, thumbs-up, face-laugh, face-surprise, comment-dots and people-arrows.
 
 ## Apache License 2.0
 
