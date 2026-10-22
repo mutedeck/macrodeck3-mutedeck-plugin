@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <!-- CA1707: underscored test names, like the Macro Deck repository's own test projects.
+             CA1861: expected values read best inline in an assertion, and a test runs once. -->
+        <NoWarn>$(NoWarn);CA1707;CA1861</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MacroDeck.Plugin.Testing" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <PackageReference Include="NUnit" />
+        <PackageReference Include="NUnit.Analyzers" PrivateAssets="all" />
+        <PackageReference Include="NUnit3TestAdapter" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\MuteDeckPlugin\MuteDeckPlugin.csproj" />
+    </ItemGroup>
+
+</Project>

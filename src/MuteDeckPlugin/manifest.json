@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.macro-deck.app/plugin-manifest-v1.schema.json",
+  "manifestVersion": 1,
+  "id": "com.mutedeck.mutedeck",
+  "name": "MuteDeck",
+  "version": "1.0.0",
+  "description": "Control your meetings from Macro Deck through MuteDeck: mute, camera, screen share, recording, leave meeting and custom actions, with live status.",
+  "icon": "Assets/icon.png",
+  "entrypoints": {
+    "win-x64": {
+      "executable": "runtimes/win-x64/MuteDeckPlugin.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "osx-arm64": {
+      "executable": "runtimes/osx-arm64/MuteDeckPlugin.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    }
+  },
+  "publisher": {
+    "name": "MuteDeck"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/mutedeck/macrodeck3-mutedeck-plugin",
+  "compatibility": {
+    "macroDeck": ">=3.0.0-beta.18"
+  },
+  "homepage": "https://mutedeck.com",
+  "permissions": [
+    "net:outbound",
+    "host:config",
+    "host:variables",
+    "host:widgets",
+    "host:notifications"
+  ],
+  "ai": {
+    "interaction": false,
+    "generatedContent": false,
+    "generatedAssets": false
+  },
+  "bundledIconPacks": [
+    {
+      "key": "mutedeck",
+      "path": "icon-packs/mutedeck.macroDeckIconPack"
+    }
+  ]
+}

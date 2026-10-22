@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- The default-language file. Every translation is checked against it and the fallback chain ends
+       here. Add a language with Localization/Strings.<culture>.resx beside it. -->
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actions.ToggleMute.Name" xml:space="preserve">
+    <value>Microphone: mute/unmute</value>
+  </data>
+  <data name="Actions.ToggleMute.Description" xml:space="preserve">
+    <value>Toggle, mute or unmute the microphone in the current meeting.</value>
+  </data>
+  <data name="Actions.ToggleMute.On" xml:space="preserve">
+    <value>Mute</value>
+  </data>
+  <data name="Actions.ToggleMute.Off" xml:space="preserve">
+    <value>Unmute</value>
+  </data>
+  <data name="Actions.ToggleVideo.Name" xml:space="preserve">
+    <value>Camera: start/stop</value>
+  </data>
+  <data name="Actions.ToggleVideo.Description" xml:space="preserve">
+    <value>Toggle, start or stop the camera in the current meeting.</value>
+  </data>
+  <data name="Actions.ToggleVideo.On" xml:space="preserve">
+    <value>Start camera</value>
+  </data>
+  <data name="Actions.ToggleVideo.Off" xml:space="preserve">
+    <value>Stop camera</value>
+  </data>
+  <data name="Actions.ToggleShare.Name" xml:space="preserve">
+    <value>Screen share: start/stop</value>
+  </data>
+  <data name="Actions.ToggleShare.Description" xml:space="preserve">
+    <value>Toggle, start or stop screen sharing in the current meeting.</value>
+  </data>
+  <data name="Actions.ToggleShare.On" xml:space="preserve">
+    <value>Start sharing</value>
+  </data>
+  <data name="Actions.ToggleShare.Off" xml:space="preserve">
+    <value>Stop sharing</value>
+  </data>
+  <data name="Actions.ToggleRecord.Name" xml:space="preserve">
+    <value>Recording: start/stop</value>
+  </data>
+  <data name="Actions.ToggleRecord.Description" xml:space="preserve">
+    <value>Toggle, start or stop recording in the current meeting.</value>
+  </data>
+  <data name="Actions.ToggleRecord.On" xml:space="preserve">
+    <value>Start recording</value>
+  </data>
+  <data name="Actions.ToggleRecord.Off" xml:space="preserve">
+    <value>Stop recording</value>
+  </data>
+  <data name="Actions.ToggleState.Label" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="Actions.ToggleState.Description" xml:space="preserve">
+    <value>Toggle switches between the two states on every press; the other choices always set one state.</value>
+  </data>
+  <data name="Actions.ToggleState.Toggle" xml:space="preserve">
+    <value>Toggle</value>
+  </data>
+  <data name="Actions.LeaveMeeting.Name" xml:space="preserve">
+    <value>Leave meeting</value>
+  </data>
+  <data name="Actions.LeaveMeeting.Description" xml:space="preserve">
+    <value>Leave the current meeting.</value>
+  </data>
+  <data name="Actions.BringToFront.Name" xml:space="preserve">
+    <value>Bring call to front</value>
+  </data>
+  <data name="Actions.BringToFront.Description" xml:space="preserve">
+    <value>Bring the meeting window to the foreground.</value>
+  </data>
+  <data name="Actions.CustomAction.Name" xml:space="preserve">
+    <value>Trigger custom action</value>
+  </data>
+  <data name="Actions.CustomAction.Description" xml:space="preserve">
+    <value>Run a MuteDeck custom action by name, like raise hand, reactions or toggle chat.</value>
+  </data>
+  <data name="Actions.CustomAction.ActionName.Label" xml:space="preserve">
+    <value>Custom action</value>
+  </data>
+  <data name="Actions.CustomAction.ActionName.Description" xml:space="preserve">
+    <value>Pick one of the custom actions MuteDeck offers, or type its name.</value>
+  </data>
+  <data name="Actions.CustomAction.ActionName.Placeholder" xml:space="preserve">
+    <value>Choose a custom action</value>
+  </data>
+  <data name="States.NoMicrophone" xml:space="preserve">
+    <value>No microphone</value>
+  </data>
+  <data name="States.InCall" xml:space="preserve">
+    <value>In call</value>
+  </data>
+  <data name="States.NoCall" xml:space="preserve">
+    <value>No call</value>
+  </data>
+  <data name="Results.NotConnected" xml:space="preserve">
+    <value>MuteDeck is not connected. Check that MuteDeck is running and that Macro Deck is approved in MuteDeck.</value>
+  </data>
+  <data name="Results.NotConfirmed" xml:space="preserve">
+    <value>Sent to MuteDeck. This MuteDeck version does not confirm actions.</value>
+  </data>
+  <data name="Results.NotInCall" xml:space="preserve">
+    <value>There is no meeting in progress.</value>
+  </data>
+  <data name="Results.NotLicensed" xml:space="preserve">
+    <value>Your MuteDeck license does not include this action.</value>
+  </data>
+  <data name="Results.UnknownAction" xml:space="preserve">
+    <value>MuteDeck does not know this action.</value>
+  </data>
+  <data name="Results.Rejected" xml:space="preserve">
+    <value>MuteDeck refused the action ({reason}).</value>
+    <comment>{reason} is MuteDeck's machine-readable reason code.</comment>
+  </data>
+  <data name="Results.Timeout" xml:space="preserve">
+    <value>MuteDeck did not answer in time.</value>
+  </data>
+  <data name="Results.Failed" xml:space="preserve">
+    <value>The action could not be sent to MuteDeck.</value>
+  </data>
+  <data name="Variables.Connected.Name" xml:space="preserve">
+    <value>MuteDeck connected</value>
+  </data>
+  <data name="Variables.Connected.Description" xml:space="preserve">
+    <value>True while Macro Deck is connected to MuteDeck and approved.</value>
+  </data>
+  <data name="Variables.InCall.Name" xml:space="preserve">
+    <value>In call</value>
+  </data>
+  <data name="Variables.InCall.Description" xml:space="preserve">
+    <value>True while you are in a meeting.</value>
+  </data>
+  <data name="Variables.Muted.Name" xml:space="preserve">
+    <value>Muted</value>
+  </data>
+  <data name="Variables.Muted.Description" xml:space="preserve">
+    <value>True while your microphone is muted.</value>
+  </data>
+  <data name="Variables.VideoActive.Name" xml:space="preserve">
+    <value>Camera on</value>
+  </data>
+  <data name="Variables.VideoActive.Description" xml:space="preserve">
+    <value>True while your camera is on.</value>
+  </data>
+  <data name="Variables.ShareActive.Name" xml:space="preserve">
+    <value>Screen share on</value>
+  </data>
+  <data name="Variables.ShareActive.Description" xml:space="preserve">
+    <value>True while you share your screen.</value>
+  </data>
+  <data name="Variables.RecordActive.Name" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="Variables.RecordActive.Description" xml:space="preserve">
+    <value>True while the meeting is being recorded.</value>
+  </data>
+  <data name="Variables.CallStatus.Name" xml:space="preserve">
+    <value>Call status</value>
+  </data>
+  <data name="Variables.MuteStatus.Name" xml:space="preserve">
+    <value>Microphone status</value>
+  </data>
+  <data name="Variables.VideoStatus.Name" xml:space="preserve">
+    <value>Camera status</value>
+  </data>
+  <data name="Variables.ShareStatus.Name" xml:space="preserve">
+    <value>Screen share status</value>
+  </data>
+  <data name="Variables.RecordStatus.Name" xml:space="preserve">
+    <value>Recording status</value>
+  </data>
+  <data name="Variables.ControlStatus.Name" xml:space="preserve">
+    <value>Control status</value>
+  </data>
+  <data name="Variables.RawStatusDescription" xml:space="preserve">
+    <value>MuteDeck's raw status: active, inactive or disabled.</value>
+  </data>
+  <data name="Variables.CallLabel.Name" xml:space="preserve">
+    <value>Call label</value>
+  </data>
+  <data name="Variables.MuteLabel.Name" xml:space="preserve">
+    <value>Microphone label</value>
+  </data>
+  <data name="Variables.VideoLabel.Name" xml:space="preserve">
+    <value>Camera label</value>
+  </data>
+  <data name="Variables.ShareLabel.Name" xml:space="preserve">
+    <value>Screen share label</value>
+  </data>
+  <data name="Variables.RecordLabel.Name" xml:space="preserve">
+    <value>Recording label</value>
+  </data>
+  <data name="Variables.LabelDescription" xml:space="preserve">
+    <value>Friendly text for a button label.</value>
+  </data>
+  <data name="VariableValues.InCall" xml:space="preserve">
+    <value>In call</value>
+    <comment>Value of mutedeck_call_label. Kept identical to the Macro Deck 2 plugin so imported buttons keep working.</comment>
+  </data>
+  <data name="VariableValues.NoCall" xml:space="preserve">
+    <value>No call</value>
+  </data>
+  <data name="VariableValues.Muted" xml:space="preserve">
+    <value>Muted</value>
+  </data>
+  <data name="VariableValues.Unmuted" xml:space="preserve">
+    <value>Unmuted</value>
+  </data>
+  <data name="VariableValues.NoMicrophone" xml:space="preserve">
+    <value>No mic</value>
+  </data>
+  <data name="VariableValues.On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="VariableValues.Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="VariableValues.Disabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="Issues.ApprovalPending.Title" xml:space="preserve">
+    <value>Approve Macro Deck in MuteDeck</value>
+  </data>
+  <data name="Issues.ApprovalPending.Description" xml:space="preserve">
+    <value>MuteDeck is asking whether Macro Deck may control your meetings. Allow it in the MuteDeck window.</value>
+  </data>
+  <data name="Issues.Denied.Title" xml:space="preserve">
+    <value>MuteDeck denied access</value>
+  </data>
+  <data name="Issues.Denied.Description" xml:space="preserve">
+    <value>Macro Deck was denied in MuteDeck. MuteDeck asks again shortly; allow it there to use these actions.</value>
+  </data>
+  <data name="Issues.Unknown" xml:space="preserve">
+    <value>Unknown issue {issueId}.</value>
+  </data>
+  <data name="Notifications.Approval.Title" xml:space="preserve">
+    <value>MuteDeck</value>
+  </data>
+  <data name="Notifications.Approval.Message" xml:space="preserve">
+    <value>Approve Macro Deck in MuteDeck to control your meetings.</value>
+  </data>
+  <data name="ConfigFlow.Connection.Title" xml:space="preserve">
+    <value>Connect to MuteDeck</value>
+  </data>
+  <data name="ConfigFlow.Connection.Description" xml:space="preserve">
+    <value>MuteDeck runs on this computer by default, so the defaults usually work: just save. After saving, allow Macro Deck in MuteDeck when it asks.</value>
+  </data>
+  <data name="ConfigFlow.Connection.Host.Label" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="ConfigFlow.Connection.Host.Description" xml:space="preserve">
+    <value>The computer MuteDeck runs on. Use localhost for this computer.</value>
+  </data>
+  <data name="ConfigFlow.Connection.Port.Label" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="ConfigFlow.Connection.Port.Description" xml:space="preserve">
+    <value>MuteDeck's plugin port. MuteDeck uses 3492 unless you changed it.</value>
+  </data>
+  <data name="ConfigFlow.Connection.InvalidHost" xml:space="preserve">
+    <value>Enter a host name or IP address, without http:// or a port.</value>
+  </data>
+  <data name="ConfigFlow.UnknownStep" xml:space="preserve">
+    <value>This setup step is no longer valid. Start the setup again.</value>
+  </data>
+</root>
